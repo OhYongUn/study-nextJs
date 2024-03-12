@@ -1,0 +1,16 @@
+# 종속성
+/node_modules
+
+# 다음과 같은 Next.js 빌드 출력
+/.next
+/out
+.idea
+package-lock.json
+# 환경 설정 파일
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 기타 무시할 파일
+.DS_Store
