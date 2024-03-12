@@ -14,3 +14,5 @@ package-lock.json
 
 # 기타 무시할 파일
 .DS_Store
+next-env.d.ts
+tsconfig.json
