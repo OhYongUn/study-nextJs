@@ -68,3 +68,22 @@ Promise.all() 메서드는 순회 가능한 객체에 주어진 모든 프로미
 
 https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
 
+<h2>Suspense</h2>
+Async Server Component TypeScript Error 오류 해결 방법
+
+Its return type 'Promise' is not a valid JSX element.
+async 가 포함된 서버 컴포넌트를 사용할 때 발생하는 타입스크립트 오류로 아래 두 가지 방법 중 하나로 해결할 수 있습니다.
+
+1. typescript 5.1.3 버전 이상, @types/react 18.2.8 버전 이상 설치하기
+   현재 @types/react는 설치되어 있지 않기 때문에
+   npm i -D @types/react 로 설치 필요
+
+2. 컴포넌트 위에 {/* @ts-expect-error Async Server Component */} 주석 추가하기
+```
+{/* @ts-expect-error Async Server Component */}
+< MovieInfo id={id} / >
+{/* @ts-expect-error Async Server Component */}
+< MovieVideos id={id} / >
+```
+https://nextjs.org/docs/app/building-your-application/configuring/typescript#async-server-component-typescript-error
+
