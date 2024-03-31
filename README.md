@@ -87,3 +87,14 @@ async 가 포함된 서버 컴포넌트를 사용할 때 발생하는 타입스�
 ```
 https://nextjs.org/docs/app/building-your-application/configuring/typescript#async-server-component-typescript-error
 
+
+<h2> CSS Modules</h2>
+Next.js에는 .module.css 확장자를 사용하여 CSS 모듈을 기본적으로 지원합니다.
+CSS 모듈은 고유한 클래스 이름을 자동으로 생성하여 CSS 범위를 로컬로 지정합니다.
+이를 통해 충돌에 대한 걱정 없이 다른 파일에서 동일한 클래스 이름을 사용할 수 있습니다.
+이러한 동작으로 인해 CSS 모듈은 컴포넌트 레벨 CSS를 포함하는 이상적인 방법이 되었습니다.
+https://nextjs.org/docs/app/building-your-application/styling/css-modules
+
+Global Styles
+글로벌 스타일은 앱 디렉터리 내의 모든 레이아웃, 페이지 또는 컴포넌트로 가져올 수 있습니다.
+https://nextjs.org/docs/app/building-your-application/styling/css-modules#global-styles
